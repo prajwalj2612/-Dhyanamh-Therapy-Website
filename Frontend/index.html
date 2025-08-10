@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhyanamh Therapy - Your Journey to Mental Wellness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo-container" style="display: flex; align-items: center;">
+                <img src="logo.jpeg" 
+                     alt="Dhyanam Therapy Logo" 
+                     style="height: 40px; margin-right: 10px;">
+                <span style="font-size: 20px; font-weight: bold; color: #6a0dad;">Dhyanamh Therapy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#book" class="cta-button">Book Session</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content fade-in">
+                <h1>Your Journey to Mental Wellness Starts Here</h1>
+                <p>Professional, compassionate therapy services designed to help you navigate life's challenges and discover your inner strength. Experience healing in a safe, supportive environment.</p>
+                <div class="hero-buttons">
+                    <a href="#book" class="btn-primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Book Your Session
+                    </a>
+                    <a href="#services" class="btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <div class="hero-illustration">
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item fade-in">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Clients Helped</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">7+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Support Available</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Our Therapy Services</h2>
+                <p class="section-subtitle">Comprehensive mental health support tailored to your unique needs and goals</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Individual Therapy</h3>
+                    <p>One-on-one sessions focused on your personal growth, mental health, and emotional well-being in a confidential setting.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Couples Counseling</h3>
+                    <p>Strengthen your relationship through guided communication, conflict resolution, and intimacy building exercises.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Family Therapy</h3>
+                    <p>Improve family dynamics, resolve conflicts, and build stronger connections between family members of all ages.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Trauma Recovery</h3>
+                    <p>Specialized support for processing and healing from traumatic experiences using evidence-based approaches.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Anxiety & Depression</h3>
+                    <p>Targeted treatment for anxiety disorders and depression using cognitive behavioral therapy and mindfulness techniques.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Online Therapy</h3>
+                    <p>Convenient and secure virtual sessions that provide the same quality care from the comfort of your home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section with Swipeable Therapist Profiles -->
+    <section class="about" id="about">
+        <div class="section-header">
+            <h2 class="section-title">Meet Your Therapists</h2>
+            <p class="section-subtitle">Our experienced team of licensed professionals is here to support your journey</p>
+        </div>
+        
+        <div class="therapist-carousel-container">
+            <div class="swipe-hint">
+                <i class="fas fa-arrow-left"></i> Swipe to see more
+            </div>
+            
+            <div class="therapist-carousel" id="therapistCarousel">
+                <!-- First Therapist -->
+                <div class="therapist-profile">
+                    <div class="therapist-image">
+                        <div class="therapist-img">
+                           <img src="manvi.jpeg" alt="Manvi Pralhad Bhoite">
+                        </div>
+                    </div>
+                    <div class="therapist-content">
+                        <h2>Manvi Pralhad Bhoite</h2>
+                        <p>With over 3 years of experience in mental health care, Ms. Manvi Bhoite is dedicated to providing compassionate, evidence-based therapy that honors your unique journey toward healing and growth.</p>
+                        <p>Her approach combines traditional therapeutic methods with modern techniques, creating a safe space where you can explore your thoughts, feelings, and experiences without judgment.</p>
+                        <div class="therapist-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <span>Licensed Clinical Therapist</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <span>Masters in Clinical Psychology</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <span>Specialized in Trauma & Anxiety</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <span>Holistic Healing Approach</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Therapist -->
+                <div class="therapist-profile">
+                    <div class="therapist-image">
+                        <div class="therapist-img">
+                           <img src="dhanaaya.jpeg" alt="Dhanaaya Jagtap">
+                        </div>
+                    </div>
+                    <div class="therapist-content">
+                        <h2>Dhanaaya Jagtap</h2>                   
+                        <p>Ms. Dhanaaya brings 7+ years of specialized experience in cognitive behavioral therapy and mindfulness-based interventions. She focuses on helping individuals overcome depression, anxiety, and stress-related disorders.</p>
+                        <p>She is also a spiritual healer, providing a holistic approach to mental and emotional well-being. Ms. Dhanaaya helps clients develop practical coping strategies and build resilience for long-term mental wellness.</p>
+                        <div class="therapist-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <span>Licensed Mental Health Counselor</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <span>Masters in Psychology</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <span>CBT & Mindfulness Specialist</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <span>Solution-Focused Therapy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Navigation -->
+            <div class="carousel-nav">
+                <button class="carousel-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="carousel-indicators">
+                    <button class="carousel-dot active" data-slide="0"></button>
+                    <button class="carousel-dot" data-slide="1"></button>
+                </div>
+                
+                <button class="carousel-btn" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info fade-in">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Ready to begin your journey? Contact us to schedule your consultation.</p>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Phone</h3>
+                        <p>+91 9022101648</p>
+                        <p>+91 9136632156</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>omdhyannamtherapy@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Office Location</h3>
+                        <p>Green Lawns, Belavli Badlapur West<br>Thane, Maharashtra 421503</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 7:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form fade-in" id="book">
+                <h3>Book Your Session</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Preferred Service</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="individual">Individual Therapy</option>
+                            <option value="couples">Couples Counseling</option>
+                            <option value="family">Family Therapy</option>
+                            <option value="trauma">Trauma Recovery</option>
+                            <option value="anxiety">Anxiety & Depression</option>
+                            <option value="online">Online Therapy</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" placeholder="Tell us how we can help you..."></textarea>
+                    </div>
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Book Session
+                    </button>
+                </form>
+                <p id="responseMessage"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Dhyanamh Therapy</h3>
+                <p>Your trusted partner in mental wellness and emotional healing. Creating a safe space for growth and transformation.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/9022101648" target="_blank" class="social-link whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dhyanamh_therapy" target="_blank" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/om-dhyannam-therapy-609909376" target="_blank" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="#services">Individual Therapy</a>
+                <a href="#services">Couples Counseling</a>
+                <a href="#services">Family Therapy</a>
+                <a href="#services">Trauma Recovery</a>
+                <a href="#services">Online Therapy</a>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#book">Book Session</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Green Lawns, Belavli</p>
+                <p>Badlapur West, Thane-421503</p>
+                <p>Phone: +91 9022101648</p>
+                <p>Phone: +91 9136632156</p>
+                <p>Email: omdhyannamtherapy@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Dhyanamh Therapy. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
